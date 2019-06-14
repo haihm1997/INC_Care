@@ -41,6 +41,9 @@
 		524D478022B1575A003504D9 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D477B22B1575A003504D9 /* BaseRequest.swift */; };
 		524D478122B1575A003504D9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D477C22B1575A003504D9 /* APIResponse.swift */; };
 		524D478222B1575A003504D9 /* APIService+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D477D22B1575A003504D9 /* APIService+Example.swift */; };
+		52D591DB22B3AFE80020EF99 /* APIService+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D591DA22B3AFE80020EF99 /* APIService+Demo.swift */; };
+		52D591DE22B424FC0020EF99 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D591DD22B424FC0020EF99 /* RootViewController.swift */; };
+		52D591E122B4287F0020EF99 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D591E022B4287F0020EF99 /* BaseNavigationController.swift */; };
 		F9005F60D06D4D41C364853A /* Pods_INC_Care.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA0B8F17A4C10615D5F474F /* Pods_INC_Care.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,10 @@
 		524D477B22B1575A003504D9 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		524D477C22B1575A003504D9 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		524D477D22B1575A003504D9 /* APIService+Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIService+Example.swift"; sourceTree = "<group>"; };
+		52D591D922B342E80020EF99 /* INC_Care.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = INC_Care.entitlements; sourceTree = "<group>"; };
+		52D591DA22B3AFE80020EF99 /* APIService+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+Demo.swift"; sourceTree = "<group>"; };
+		52D591DD22B424FC0020EF99 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		52D591E022B4287F0020EF99 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E4A53AD5377903B9387A3210 /* Pods-INC_Care.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INC_Care.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INC_Care/Pods-INC_Care.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +143,7 @@
 		524D472722B153F5003504D9 /* INC_Care */ = {
 			isa = PBXGroup;
 			children = (
+				52D591D922B342E80020EF99 /* INC_Care.entitlements */,
 				524D473A22B15534003504D9 /* Classes */,
 				524D472C22B153F5003504D9 /* Main.storyboard */,
 				524D472F22B153F5003504D9 /* Assets.xcassets */,
@@ -193,7 +201,10 @@
 		524D473F22B15590003504D9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				52D591DF22B4282C0020EF99 /* Base */,
+				52D591DC22B41DDF0020EF99 /* Tab1 */,
 				524D472A22B153F5003504D9 /* ViewController.swift */,
+				52D591DD22B424FC0020EF99 /* RootViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -249,8 +260,9 @@
 				524D477922B1575A003504D9 /* APIConfigs.swift */,
 				524D477C22B1575A003504D9 /* APIResponse.swift */,
 				524D477A22B1575A003504D9 /* APIService.swift */,
-				524D477D22B1575A003504D9 /* APIService+Example.swift */,
 				524D477B22B1575A003504D9 /* BaseRequest.swift */,
+				524D477D22B1575A003504D9 /* APIService+Example.swift */,
+				52D591DA22B3AFE80020EF99 /* APIService+Demo.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -261,6 +273,21 @@
 				524D477722B15753003504D9 /* NotificationService.swift */,
 			);
 			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		52D591DC22B41DDF0020EF99 /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		52D591DF22B4282C0020EF99 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52D591E022B4287F0020EF99 /* BaseNavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +324,11 @@
 				TargetAttributes = {
 					524D472422B153F5003504D9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -361,6 +393,7 @@
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/IDMPhotoBrowser/IDMPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -377,6 +410,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDMPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -410,8 +444,11 @@
 				524D472B22B153F5003504D9 /* ViewController.swift in Sources */,
 				524D476222B156D4003504D9 /* CGSize+.swift in Sources */,
 				524D476822B156D4003504D9 /* UIViewController+.swift in Sources */,
+				52D591DB22B3AFE80020EF99 /* APIService+Demo.swift in Sources */,
 				524D475F22B156D4003504D9 /* UIScrollView+.swift in Sources */,
 				524D475E22B156D4003504D9 /* UIImage+.swift in Sources */,
+				52D591E122B4287F0020EF99 /* BaseNavigationController.swift in Sources */,
+				52D591DE22B424FC0020EF99 /* RootViewController.swift in Sources */,
 				524D476F22B156D4003504D9 /* UIInterfaceOrientationMask+.swift in Sources */,
 				524D475C22B156D4003504D9 /* Dictionary+.swift in Sources */,
 				524D475D22B156D4003504D9 /* CGPoint+.swift in Sources */,
@@ -576,7 +613,10 @@
 			baseConfigurationReference = E4A53AD5377903B9387A3210 /* Pods-INC_Care.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = INC_Care/INC_Care.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5RNY9HP895;
 				INFOPLIST_FILE = INC_Care/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +624,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boogeymen.INC-Care";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = INCCareApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,7 +635,10 @@
 			baseConfigurationReference = 11A9FE00885E19C20D2E23F1 /* Pods-INC_Care.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = INC_Care/INC_Care.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5RNY9HP895;
 				INFOPLIST_FILE = INC_Care/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,6 +646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boogeymen.INC-Care";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = INCCareApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

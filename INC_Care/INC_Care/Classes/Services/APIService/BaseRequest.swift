@@ -31,7 +31,7 @@ class BaseRequest: URLRequestConvertible {
             let urlEncoding = URLEncoding(destination: .queryString, arrayEncoding: .noBrackets, boolEncoding: .literal)
             urlRequest = try urlEncoding.encode(urlRequest, with: parameters)
             return urlRequest
-        } else {
+        } else if method == .post {
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: parameters)
         }
         
@@ -43,9 +43,8 @@ class BaseRequest: URLRequestConvertible {
     }
     
     var headers: [String: String] {
-        return ["Content-Type": "application/x-www-form-urlencoded",
-                "Authorization": "Bear Token",
-                "ClientApi": "Version Name"]
+        return ["Content-Type": "application/json",
+                "secretkey": "akachain_cfg"]
     }
     
     func urlRequestWithHeaders() -> URLRequest {

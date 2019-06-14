@@ -10,10 +10,17 @@ import UIKit
 
 struct Address {
     
-    static let baseUrl = "http://cqms-server/CQMSWebAPI/"
+    static let baseUrl = "https://healthcare-dapp.akachains.io/api/v1/"
     
     struct Authen {
         static let login        =   "login"
+    }
+    
+    struct Demo {
+        static let getAllTreatment = "v1/getAllTreatmentTrans"
+        static let getAllTreatmentCourse = "Patient/TreatmentCourse/GetAll"
+        static let getPHR = "Patient/TreatmentCourse/ViewCurrentCourse"
+        static let getViewCurrent = "Patient/TreatmentCourse/ViewCurrentCourse"
     }
     
 }

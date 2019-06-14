@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import KYDrawerController
+
+enum LeftMenuState: Int {
+    case opened = 1
+    case closed = 2
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var drawerVC: KYDrawerController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        showMainScreen()
         return true
     }
 
@@ -44,3 +50,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    func leftMenu(isShow: Bool) {
+        if isShow {
+            drawerVC.setDrawerState(.opened, animated: true)
+        } else {
+            drawerVC.setDrawerState(.closed, animated: true)
+        }
+    }
+    
+    func showMainScreen() {
+        drawerVC = UIViewController().instantiateViewController(ofType: KYDrawerController.self)
+        drawerVC.containerViewTapGesture.isEnabled = false
+        self.window?.rootViewController = drawerVC
+        self.window?.makeKeyAndVisible()
+    }
+}
