@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ConfirmCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfirmCell" rowHeight="88" id="64M-dX-4nP" customClass="ConfirmCell" customModule="INC_Care" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="64M-dX-4nP" id="bPF-AF-0AT">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rf-t8-8f1">
+                        <rect key="frame" x="119" y="21.5" width="180" height="45"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.30980392159999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="Gnr-Xy-Cvo"/>
+                            <constraint firstAttribute="height" constant="45" id="sf9-7v-M8S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <state key="normal" title="Confirm">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="confirmButtonTapped:" destination="64M-dX-4nP" eventType="touchUpInside" id="UA0-pm-doI"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Rf-t8-8f1" firstAttribute="centerX" secondItem="bPF-AF-0AT" secondAttribute="centerX" id="F29-qy-mhZ"/>
+                    <constraint firstItem="4Rf-t8-8f1" firstAttribute="centerY" secondItem="bPF-AF-0AT" secondAttribute="centerY" id="Q9f-aw-Vqe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="134.78260869565219" y="138.61607142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

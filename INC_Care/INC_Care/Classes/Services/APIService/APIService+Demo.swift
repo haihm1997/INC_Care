@@ -57,15 +57,6 @@ class DemoRouter: BaseRequest {
         }
     }
     
-//    override var bodyParam: [String : Any] {
-//        switch endPoint {
-//        case .demo:
-//            return [String: Any]()
-//        case .getAllTreatments(let param):
-//            return param
-//        }
-//    }
-    
 }
 
 extension APIService {

@@ -44,12 +44,15 @@ class BaseRequest: URLRequestConvertible {
     
     var headers: [String: String] {
         return ["Content-Type": "application/json",
-                "secretkey": "akachain_cfg"]
+                "secretkey": "babachain_cfg"]
     }
     
     func urlRequestWithHeaders() -> URLRequest {
         let url = URL(string: Address.baseUrl)!
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
+        if path.contains(Address.onChainBaseAPi) {
+            urlRequest = URLRequest(url: URL(string: path)!)
+        }
         urlRequest.httpMethod = method.rawValue
         urlRequest.timeoutInterval = 30
         urlRequest.allHTTPHeaderFields = headers

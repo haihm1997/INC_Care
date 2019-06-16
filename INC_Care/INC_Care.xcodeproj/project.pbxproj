@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522C563822B4C4C500F09F44 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C563722B4C4C500F09F44 /* BaseViewController.swift */; };
+		522C563B22B4C5F800F09F44 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C563A22B4C5F800F09F44 /* HomeViewModel.swift */; };
+		522C563E22B4C60B00F09F44 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C563D22B4C60B00F09F44 /* BaseViewModel.swift */; };
+		522C564022B4CB4000F09F44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C563F22B4CB4000F09F44 /* HomeViewController.swift */; };
+		522C564222B4CC8700F09F44 /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C564122B4CC8700F09F44 /* Treatment.swift */; };
+		522C564622B4D9A900F09F44 /* TreatmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C564522B4D9A900F09F44 /* TreatmentCell.swift */; };
+		522C564822B4D9C800F09F44 /* TreatmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522C564722B4D9C800F09F44 /* TreatmentCell.xib */; };
+		522C564C22B4FBBC00F09F44 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C564B22B4FBBC00F09F44 /* LeftMenuViewController.swift */; };
+		522C564E22B4FCF700F09F44 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C564D22B4FCF700F09F44 /* Menu.swift */; };
 		524D472922B153F5003504D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D472822B153F5003504D9 /* AppDelegate.swift */; };
 		524D472B22B153F5003504D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D472A22B153F5003504D9 /* ViewController.swift */; };
 		524D472E22B153F5003504D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524D472C22B153F5003504D9 /* Main.storyboard */; };
@@ -41,6 +50,22 @@
 		524D478022B1575A003504D9 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D477B22B1575A003504D9 /* BaseRequest.swift */; };
 		524D478122B1575A003504D9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D477C22B1575A003504D9 /* APIResponse.swift */; };
 		524D478222B1575A003504D9 /* APIService+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524D477D22B1575A003504D9 /* APIService+Example.swift */; };
+		5257972C22B5082B00CC00AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5257972B22B5082B00CC00AA /* LoginViewController.swift */; };
+		52BFD9E522B5331D00A03159 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9E422B5331D00A03159 /* Patient.swift */; };
+		52BFD9E722B5341500A03159 /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9E622B5341500A03159 /* Insurance.swift */; };
+		52BFD9E922B5375100A03159 /* UserDefault+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9E822B5375100A03159 /* UserDefault+.swift */; };
+		52BFD9EC22B55C8900A03159 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9EB22B55C8900A03159 /* ProfileViewController.swift */; };
+		52BFD9F022B566F800A03159 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9EF22B566F800A03159 /* QRViewController.swift */; };
+		52BFD9F222B570B800A03159 /* ConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BFD9F122B570B800A03159 /* ConfirmCell.xib */; };
+		52BFD9F422B570D200A03159 /* ConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9F322B570D200A03159 /* ConfirmCell.swift */; };
+		52BFD9F622B5783800A03159 /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9F522B5783800A03159 /* CustomDialog.swift */; };
+		52BFD9F822B583E900A03159 /* TreatmentCource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9F722B583E900A03159 /* TreatmentCource.swift */; };
+		52BFD9FA22B585F900A03159 /* APIService+Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9F922B585F900A03159 /* APIService+Treatment.swift */; };
+		52BFD9FC22B5DA9A00A03159 /* HisTreatmentCourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9FB22B5DA9A00A03159 /* HisTreatmentCourceCell.swift */; };
+		52BFD9FE22B5DAC300A03159 /* HisTreatmentCourceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BFD9FD22B5DAC300A03159 /* HisTreatmentCourceCell.xib */; };
+		52BFDA0022B5E34700A03159 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFD9FF22B5E34700A03159 /* HistoryViewController.swift */; };
+		52BFDA0222B5E3AE00A03159 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFDA0122B5E3AE00A03159 /* HistoryViewModel.swift */; };
+		52BFDA0422B5E85A00A03159 /* DetailTreatmentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFDA0322B5E85A00A03159 /* DetailTreatmentListVC.swift */; };
 		52D591DB22B3AFE80020EF99 /* APIService+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D591DA22B3AFE80020EF99 /* APIService+Demo.swift */; };
 		52D591DE22B424FC0020EF99 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D591DD22B424FC0020EF99 /* RootViewController.swift */; };
 		52D591E122B4287F0020EF99 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D591E022B4287F0020EF99 /* BaseNavigationController.swift */; };
@@ -50,6 +75,15 @@
 /* Begin PBXFileReference section */
 		11A9FE00885E19C20D2E23F1 /* Pods-INC_Care.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INC_Care.release.xcconfig"; path = "Pods/Target Support Files/Pods-INC_Care/Pods-INC_Care.release.xcconfig"; sourceTree = "<group>"; };
 		3AA0B8F17A4C10615D5F474F /* Pods_INC_Care.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INC_Care.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		522C563722B4C4C500F09F44 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		522C563A22B4C5F800F09F44 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		522C563D22B4C60B00F09F44 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		522C563F22B4CB4000F09F44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		522C564122B4CC8700F09F44 /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
+		522C564522B4D9A900F09F44 /* TreatmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentCell.swift; sourceTree = "<group>"; };
+		522C564722B4D9C800F09F44 /* TreatmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreatmentCell.xib; sourceTree = "<group>"; };
+		522C564B22B4FBBC00F09F44 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		522C564D22B4FCF700F09F44 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		524D472522B153F5003504D9 /* INC_Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INC_Care.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524D472822B153F5003504D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524D472A22B153F5003504D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +120,22 @@
 		524D477B22B1575A003504D9 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		524D477C22B1575A003504D9 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		524D477D22B1575A003504D9 /* APIService+Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIService+Example.swift"; sourceTree = "<group>"; };
+		5257972B22B5082B00CC00AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		52BFD9E422B5331D00A03159 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		52BFD9E622B5341500A03159 /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
+		52BFD9E822B5375100A03159 /* UserDefault+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+.swift"; sourceTree = "<group>"; };
+		52BFD9EB22B55C8900A03159 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		52BFD9EF22B566F800A03159 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		52BFD9F122B570B800A03159 /* ConfirmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCell.xib; sourceTree = "<group>"; };
+		52BFD9F322B570D200A03159 /* ConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCell.swift; sourceTree = "<group>"; };
+		52BFD9F522B5783800A03159 /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
+		52BFD9F722B583E900A03159 /* TreatmentCource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentCource.swift; sourceTree = "<group>"; };
+		52BFD9F922B585F900A03159 /* APIService+Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+Treatment.swift"; sourceTree = "<group>"; };
+		52BFD9FB22B5DA9A00A03159 /* HisTreatmentCourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HisTreatmentCourceCell.swift; sourceTree = "<group>"; };
+		52BFD9FD22B5DAC300A03159 /* HisTreatmentCourceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HisTreatmentCourceCell.xib; sourceTree = "<group>"; };
+		52BFD9FF22B5E34700A03159 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		52BFDA0122B5E3AE00A03159 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		52BFDA0322B5E85A00A03159 /* DetailTreatmentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTreatmentListVC.swift; sourceTree = "<group>"; };
 		52D591D922B342E80020EF99 /* INC_Care.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = INC_Care.entitlements; sourceTree = "<group>"; };
 		52D591DA22B3AFE80020EF99 /* APIService+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+Demo.swift"; sourceTree = "<group>"; };
 		52D591DD22B424FC0020EF99 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +170,52 @@
 				3AA0B8F17A4C10615D5F474F /* Pods_INC_Care.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522C563922B4C5D300F09F44 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				522C563A22B4C5F800F09F44 /* HomeViewModel.swift */,
+				52BFDA0122B5E3AE00A03159 /* HistoryViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		522C563C22B4C5FD00F09F44 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				522C563D22B4C60B00F09F44 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		522C564322B4D96A00F09F44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52BFD9F522B5783800A03159 /* CustomDialog.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		522C564422B4D99200F09F44 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				522C564522B4D9A900F09F44 /* TreatmentCell.swift */,
+				522C564722B4D9C800F09F44 /* TreatmentCell.xib */,
+				52BFD9F122B570B800A03159 /* ConfirmCell.xib */,
+				52BFD9F322B570D200A03159 /* ConfirmCell.swift */,
+				52BFD9FB22B5DA9A00A03159 /* HisTreatmentCourceCell.swift */,
+				52BFD9FD22B5DAC300A03159 /* HisTreatmentCourceCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		522C564922B4F5C600F09F44 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				522C564B22B4FBBC00F09F44 /* LeftMenuViewController.swift */,
+			);
+			path = LeftMenu;
 			sourceTree = "<group>";
 		};
 		524D471C22B153F4003504D9 = {
@@ -169,6 +265,11 @@
 		524D473B22B15542003504D9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				522C564122B4CC8700F09F44 /* Treatment.swift */,
+				522C564D22B4FCF700F09F44 /* Menu.swift */,
+				52BFD9E422B5331D00A03159 /* Patient.swift */,
+				52BFD9E622B5341500A03159 /* Insurance.swift */,
+				52BFD9F722B583E900A03159 /* TreatmentCource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +295,8 @@
 		524D473E22B15572003504D9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				522C563C22B4C5FD00F09F44 /* Base */,
+				522C563922B4C5D300F09F44 /* Root */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -201,10 +304,13 @@
 		524D473F22B15590003504D9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				52BFD9EE22B566DE00A03159 /* SubVC */,
+				52BFD9ED22B55CA400A03159 /* Root */,
+				522C564922B4F5C600F09F44 /* LeftMenu */,
+				522C564422B4D99200F09F44 /* Cell */,
+				522C564322B4D96A00F09F44 /* View */,
 				52D591DF22B4282C0020EF99 /* Base */,
-				52D591DC22B41DDF0020EF99 /* Tab1 */,
 				524D472A22B153F5003504D9 /* ViewController.swift */,
-				52D591DD22B424FC0020EF99 /* RootViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,6 +348,7 @@
 				524D475522B156D4003504D9 /* UITableView+.swift */,
 				524D474F22B156D4003504D9 /* UIView+.swift */,
 				524D475222B156D4003504D9 /* UIViewController+.swift */,
+				52BFD9E822B5375100A03159 /* UserDefault+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,6 +370,7 @@
 				524D477B22B1575A003504D9 /* BaseRequest.swift */,
 				524D477D22B1575A003504D9 /* APIService+Example.swift */,
 				52D591DA22B3AFE80020EF99 /* APIService+Demo.swift */,
+				52BFD9F922B585F900A03159 /* APIService+Treatment.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -275,17 +383,32 @@
 			path = NotificationService;
 			sourceTree = "<group>";
 		};
-		52D591DC22B41DDF0020EF99 /* Tab1 */ = {
+		52BFD9ED22B55CA400A03159 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				52BFD9EB22B55C8900A03159 /* ProfileViewController.swift */,
+				522C563F22B4CB4000F09F44 /* HomeViewController.swift */,
+				52D591DD22B424FC0020EF99 /* RootViewController.swift */,
+				5257972B22B5082B00CC00AA /* LoginViewController.swift */,
+				52BFD9FF22B5E34700A03159 /* HistoryViewController.swift */,
 			);
-			path = Tab1;
+			path = Root;
+			sourceTree = "<group>";
+		};
+		52BFD9EE22B566DE00A03159 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				52BFD9EF22B566F800A03159 /* QRViewController.swift */,
+				52BFDA0322B5E85A00A03159 /* DetailTreatmentListVC.swift */,
+			);
+			path = SubVC;
 			sourceTree = "<group>";
 		};
 		52D591DF22B4282C0020EF99 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				52D591E022B4287F0020EF99 /* BaseNavigationController.swift */,
+				522C563722B4C4C500F09F44 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -355,9 +478,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BFD9FE22B5DAC300A03159 /* HisTreatmentCourceCell.xib in Resources */,
 				524D473322B153F5003504D9 /* LaunchScreen.storyboard in Resources */,
 				524D473022B153F5003504D9 /* Assets.xcassets in Resources */,
+				522C564822B4D9C800F09F44 /* TreatmentCell.xib in Resources */,
 				524D472E22B153F5003504D9 /* Main.storyboard in Resources */,
+				52BFD9F222B570B800A03159 /* ConfirmCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,34 +517,42 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-INC_Care/Pods-INC_Care-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/IDMPhotoBrowser/IDMPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IDMPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,10 +568,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				524D476022B156D4003504D9 /* Date+.swift in Sources */,
+				522C564C22B4FBBC00F09F44 /* LeftMenuViewController.swift in Sources */,
+				52BFDA0422B5E85A00A03159 /* DetailTreatmentListVC.swift in Sources */,
 				524D476722B156D4003504D9 /* UIColor+.swift in Sources */,
+				522C564622B4D9A900F09F44 /* TreatmentCell.swift in Sources */,
+				52BFD9F822B583E900A03159 /* TreatmentCource.swift in Sources */,
+				52BFD9F622B5783800A03159 /* CustomDialog.swift in Sources */,
 				524D477822B15753003504D9 /* NotificationService.swift in Sources */,
 				524D478222B1575A003504D9 /* APIService+Example.swift in Sources */,
 				524D476E22B156D4003504D9 /* Array+.swift in Sources */,
+				522C563822B4C4C500F09F44 /* BaseViewController.swift in Sources */,
+				52BFD9EC22B55C8900A03159 /* ProfileViewController.swift in Sources */,
 				524D476422B156D4003504D9 /* UIScreen+.swift in Sources */,
 				524D476522B156D4003504D9 /* UIView+.swift in Sources */,
 				524D477022B156D4003504D9 /* UIStoryboard+.swift in Sources */,
@@ -446,25 +587,40 @@
 				524D476822B156D4003504D9 /* UIViewController+.swift in Sources */,
 				52D591DB22B3AFE80020EF99 /* APIService+Demo.swift in Sources */,
 				524D475F22B156D4003504D9 /* UIScrollView+.swift in Sources */,
+				522C564222B4CC8700F09F44 /* Treatment.swift in Sources */,
 				524D475E22B156D4003504D9 /* UIImage+.swift in Sources */,
 				52D591E122B4287F0020EF99 /* BaseNavigationController.swift in Sources */,
 				52D591DE22B424FC0020EF99 /* RootViewController.swift in Sources */,
+				52BFD9E922B5375100A03159 /* UserDefault+.swift in Sources */,
 				524D476F22B156D4003504D9 /* UIInterfaceOrientationMask+.swift in Sources */,
+				52BFD9E522B5331D00A03159 /* Patient.swift in Sources */,
 				524D475C22B156D4003504D9 /* Dictionary+.swift in Sources */,
+				52BFD9E722B5341500A03159 /* Insurance.swift in Sources */,
+				522C563B22B4C5F800F09F44 /* HomeViewModel.swift in Sources */,
 				524D475D22B156D4003504D9 /* CGPoint+.swift in Sources */,
+				522C564022B4CB4000F09F44 /* HomeViewController.swift in Sources */,
+				52BFD9FC22B5DA9A00A03159 /* HisTreatmentCourceCell.swift in Sources */,
 				524D478022B1575A003504D9 /* BaseRequest.swift in Sources */,
+				52BFDA0022B5E34700A03159 /* HistoryViewController.swift in Sources */,
 				524D476322B156D4003504D9 /* UIDevice+.swift in Sources */,
+				52BFDA0222B5E3AE00A03159 /* HistoryViewModel.swift in Sources */,
 				524D477E22B1575A003504D9 /* APIConfigs.swift in Sources */,
 				524D472922B153F5003504D9 /* AppDelegate.swift in Sources */,
+				52BFD9FA22B585F900A03159 /* APIService+Treatment.swift in Sources */,
 				524D476B22B156D4003504D9 /* UITableView+.swift in Sources */,
+				522C564E22B4FCF700F09F44 /* Menu.swift in Sources */,
+				52BFD9F022B566F800A03159 /* QRViewController.swift in Sources */,
 				524D475B22B156D4003504D9 /* UICollectionView+.swift in Sources */,
+				522C563E22B4C60B00F09F44 /* BaseViewModel.swift in Sources */,
 				524D476A22B156D4003504D9 /* UIApplication+.swift in Sources */,
+				5257972C22B5082B00CC00AA /* LoginViewController.swift in Sources */,
 				524D474422B156CB003504D9 /* Constants.swift in Sources */,
 				524D478122B1575A003504D9 /* APIResponse.swift in Sources */,
 				524D477F22B1575A003504D9 /* APIService.swift in Sources */,
 				524D476922B156D4003504D9 /* DefaultsKeys+.swift in Sources */,
 				524D476122B156D4003504D9 /* Bundle+.swift in Sources */,
 				524D476C22B156D4003504D9 /* String+.swift in Sources */,
+				52BFD9F422B570D200A03159 /* ConfirmCell.swift in Sources */,
 				524D476622B156D4003504D9 /* CGRect+.swift in Sources */,
 				524D476D22B156D4003504D9 /* NSMutableData+.swift in Sources */,
 			);

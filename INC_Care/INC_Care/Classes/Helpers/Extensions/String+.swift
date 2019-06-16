@@ -60,4 +60,13 @@ extension String {
         let newDate = dateFormatter.date(from: self)
         return newDate ?? Date()
     }
+    
+    func toDate() -> String {
+        let firstTimeSplit = self.split(separator: ".")
+        let tempString = firstTimeSplit.first ?? ""
+        let secondTimeSplit = tempString.split(separator: "T")
+        let dayString = secondTimeSplit.first ?? ""
+        let timeString = secondTimeSplit[safe: 1] ?? ""
+        return dayString + " " + timeString
+    }
 }

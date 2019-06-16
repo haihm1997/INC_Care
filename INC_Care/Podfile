@@ -18,5 +18,8 @@ target 'INC_Care' do
   pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
   pod 'IDMPhotoBrowser'
   pod 'KYDrawerController'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'TextFieldEffects'
+  pod 'PopupDialog', '~> 1.1'
 
 end

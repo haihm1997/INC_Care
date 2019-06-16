@@ -8,6 +8,7 @@
 
 import UIKit
 import KYDrawerController
+import SwiftyUserDefaults
 
 enum LeftMenuState: Int {
     case opened = 1
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var drawerVC: KYDrawerController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        configNaviagtionBar()
         showMainScreen()
         return true
     }
@@ -51,6 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
+    
+    func configNaviagtionBar() {
+        UINavigationBar.appearance().barTintColor = UIColor.init(rgb: 0xED1C23)
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+    }
+    
     func leftMenu(isShow: Bool) {
         if isShow {
             drawerVC.setDrawerState(.opened, animated: true)
@@ -60,6 +70,23 @@ extension AppDelegate {
     }
     
     func showMainScreen() {
+        Constants.loadShared()
+        if Constants.shared.savedPatient.id.isEmpty {
+            showLoginScreen()
+        } else {
+            showDrawerVC()
+        }
+    }
+    
+    func showLoginScreen() {
+        let loginVC = UIViewController().instantiateViewController(fromiPhoneStoryboard: .main, ofType: LoginViewController.self)
+        let nav = BaseNavigationController(rootViewController: loginVC)
+        self.window?.rootViewController = nav
+        self.window?.makeKeyAndVisible()
+        
+    }
+    
+    func showDrawerVC() {
         drawerVC = UIViewController().instantiateViewController(ofType: KYDrawerController.self)
         drawerVC.containerViewTapGesture.isEnabled = false
         self.window?.rootViewController = drawerVC
