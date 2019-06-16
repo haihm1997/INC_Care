@@ -28,4 +28,15 @@ class CustomDialog {
         currentVC.present(alert, animated: true)
     }
     
+    func showAlertTwoOption(title: String = "INC Care", message: String, currentVC: UIViewController, completed: @escaping () -> ()) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+            completed()
+        }))
+        
+        currentVC.present(alert, animated: true)
+    }
+    
 }

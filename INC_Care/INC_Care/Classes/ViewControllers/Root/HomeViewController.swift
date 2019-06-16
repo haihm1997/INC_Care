@@ -99,8 +99,10 @@ class HomeViewController: BaseViewController {
     }
     
     @IBAction func makeBillTapped(_ sender: Any) {
-        showLoading()
-        viewModel.makePaymentTreatment()
+        CustomDialog.shared().showAlertTwoOption(message: "Are you sure?", currentVC: self) {
+            self.showLoading()
+            self.viewModel.makePaymentTreatment()
+        }
     }
     
 }
