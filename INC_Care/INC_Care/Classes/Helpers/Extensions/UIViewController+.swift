@@ -10,15 +10,7 @@ import UIKit
 import SVProgressHUD
 
 enum StoryboardName: String {
-    case authen = "Authen"
-    case home = "Home"
-    case listPhoto = "ListPhoto"
-    case alert = "CQAlert"
-    case tabbar = "Tabbar"
-    case tester = "Tester"
-    case kokuban = "Kokuban"
-    case approver = "Approver"
-    case camera = "Camera"
+    case main = "Main"
 }
 
 extension UIViewController {
@@ -54,6 +46,13 @@ extension UIViewController {
             return topController(controller: presented)
         }
         return controller ?? UIViewController()
+    }
+}
+
+extension UIViewController {
+    
+    func instantiateViewController<T>(ofType type: T.Type) -> T {
+        return storyboard(name: .main).instantiateViewController(ofType: type)
     }
 }
 
@@ -105,5 +104,17 @@ extension UIViewController {
     func forceToOrientation(_ orientation: UIInterfaceOrientation) {
         UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
         UINavigationController.attemptRotationToDeviceOrientation()
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

@@ -7,13 +7,32 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 struct Constants {
+    
+    struct shared {
+        static var savedPatient = Patient()
+    }
+    
     struct Screen {
         static var IPHONE_10_NATIVE_HEIGHT = CGFloat(2436)
     }
     
-    struct example {
-        static let EXAMPLE = "example"
+    struct Colors {
+        static let mainColor: UIColor = UIColor.init(rgb: 0xED1C23)
+        static let subMainColor: UIColor = UIColor.init(rgb: 0xD80064)
+    }
+}
+
+extension Constants {
+    
+    static func loadShared() {
+        Constants.shared.savedPatient = Defaults[.patientUserDefault]
+    }
+    
+    static func clearData() {
+        Constants.shared.savedPatient = Patient()
+        Defaults[.patientUserDefault] = Patient()
     }
 }

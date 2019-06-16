@@ -15,7 +15,7 @@ enum DateFormatType: String {
     case hour = "HH:mm"
     case weekday = "EEEE"
     case history = "MM/dd(EEE) hh:mm"
-    case dateServer = "yyyy-MM-dd HH:mm:ss"
+    case dateServer = "yyyy-MM-ddTHH:mm:ss"
     case dateJP = "yyyy年MM月dd日"
     case tmpDate = "yyyyMMdd_HHmmss"
     case exifDate = "yyyy:MM:dd HH:mm:ss"

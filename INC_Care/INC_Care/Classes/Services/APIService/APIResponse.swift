@@ -40,15 +40,15 @@ struct APIResponse {
     init(_ response: DataResponse<Any>) {
         print("RESULTS: \(String(describing: response.result.value))")
         if let value = response.result.value as? [String: Any] {
-            self.result = value
+            self.result = value["items"]
             
-            if let statusDict = value["Status"] as? [String: Any] {
-                self.status = CQStatus(JSON(statusDict))
+            if let resultNumber = value["result"] as? Int ,
+                let messageResult = value["message"] as? String{
+                self.status = CQStatus(result: resultNumber, message: messageResult)
             }
-            
-            if let dict = value["Result"] as? [String: Any],
-                let array = dict["Data"] as? [[String: Any]] {
-                self.data = array
+
+            if let dict = value["items"] as? [[String: Any]] {
+                self.data = dict
             }
         }
         
@@ -79,12 +79,9 @@ struct CQStatus {
         
     }
     
-    init(_ json: JSON) {
-        code = json["Code"].intValue
-        message = json["Message"].stringValue
-        method = json["Method"].stringValue
-        path = json["Path"].stringValue
-        codeStr = json["Code"].stringValue
+    init(result: Int, message: String) {
+        self.code = result
+        self.message = message
     }
     
     var isSuccess: Bool {
